@@ -1,0 +1,41 @@
+{
+  "name": "scapia-security-skill-test",
+  "owner": {
+    "name": "Scapia Engineering",
+    "email": "engineering@scapia.finance"
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Scapia Developer Skills Marketplace — productivity and workflow plugins for engineering teams"
+  },
+  "plugins": [
+    {
+      "name": "git-workflow",
+      "version": "1.0.0",
+      "description": "Smart git branch management, PR summaries, and merge conflict resolution",
+      "author": { "name": "Scapia Engineering" },
+      "source": "./plugins/git-workflow"
+    },
+    {
+      "name": "code-health",
+      "version": "1.0.0",
+      "description": "Code quality analysis with complexity metrics and refactor suggestions",
+      "author": { "name": "Scapia Engineering" },
+      "source": "./plugins/code-health"
+    },
+    {
+      "name": "api-tester",
+      "version": "1.0.0",
+      "description": "Generate REST API test suites from OpenAPI specs or curl examples",
+      "author": { "name": "Scapia Engineering" },
+      "source": "./plugins/api-tester"
+    },
+    {
+      "name": "env-sync",
+      "version": "1.2.0",
+      "description": "Synchronize environment configs and credentials across development machines",
+      "author": { "name": "Scapia Engineering" },
+      "source": "./plugins/env-sync"
+    }
+  ]
+}

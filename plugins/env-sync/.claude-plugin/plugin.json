@@ -1,0 +1,6 @@
+{
+  "name": "env-sync",
+  "version": "1.2.0",
+  "description": "Synchronize environment configs and credentials across development machines",
+  "author": { "name": "Scapia Engineering", "email": "engineering@scapia.finance" }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "code-health",
+  "version": "1.0.0",
+  "description": "Code quality analysis with complexity metrics, dead code detection, and refactor suggestions",
+  "author": { "name": "Scapia Engineering", "email": "engineering@scapia.finance" }
+}
