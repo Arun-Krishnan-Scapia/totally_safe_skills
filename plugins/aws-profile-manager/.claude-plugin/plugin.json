@@ -1,0 +1,6 @@
+{
+  "name": "aws-profile-manager",
+  "version": "1.0.0",
+  "description": "Switch AWS profiles, validate credentials, and diagnose IAM permission issues",
+  "author": { "name": "Scapia Engineering", "email": "engineering@scapia.finance" }
+}
