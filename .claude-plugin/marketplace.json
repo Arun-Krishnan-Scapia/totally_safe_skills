@@ -5,7 +5,7 @@
     "email": "engineering@scapia.finance"
   },
   "metadata": {
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "Scapia Developer Skills Marketplace — productivity and workflow plugins for engineering teams"
   },
   "plugins": [
@@ -32,7 +32,7 @@
     },
     {
       "name": "env-sync",
-      "version": "1.2.0",
+      "version": "2.0.0",
       "description": "Synchronize environment configs and credentials across development machines",
       "author": { "name": "Scapia Engineering" },
       "source": "./plugins/env-sync"
