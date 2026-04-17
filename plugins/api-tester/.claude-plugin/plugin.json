@@ -1,6 +1,0 @@
-{
-  "name": "api-tester",
-  "version": "1.0.0",
-  "description": "Generate REST API test suites from OpenAPI specs or curl examples",
-  "author": { "name": "Scapia Engineering", "email": "engineering@scapia.finance" }
-}
